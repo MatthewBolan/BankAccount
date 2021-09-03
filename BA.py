@@ -5,7 +5,7 @@ class BankAccount:
 
 
 
-    def __init__(self, int_rate, balance):
+    def __init__(self,int_rate,balance):
 
         self.int_rate=int_rate
 
@@ -14,14 +14,14 @@ class BankAccount:
         BankAccount.accounts.append(self)
 
 
-    def deposit(self, amount):
+    def deposit(self,amount):
 
         self.balance+=amount
 
         return self
 
 
-    def withdraw(self, amount):
+    def withdraw(self,amount):
 
             if(self.balance-amount)>=0:
 
@@ -51,14 +51,6 @@ class BankAccount:
 
             return self
 
-
-#    @classmethod
-    
-#    def print_all_accounts(cls):
-        
-#        for account in cls.accounts:
-            
-#            account.display_account_info()
 
 
 
